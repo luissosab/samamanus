@@ -1,10 +1,10 @@
 # Portable Media Export
 
-Prepared: 2026-09-08T04:23:22.371Z
+Prepared: 2026-09-08T13:59:54.812Z
 
-This repository contains 162 locally stored media assets in `client/public/media/`.
-All 7 source files that referenced managed media now use root-relative `/media/...` paths.
-Total local media size: 103.0 MB.
+This repository contains 168 locally stored media assets in `client/public/media/`.
+All 8 source files that referenced managed media now use root-relative `/media/...` paths.
+Total local media size: 99.0 MB.
 
 | Original path | Local path | Bytes |
 | --- | --- | ---: |
@@ -66,8 +66,6 @@ Total local media size: 103.0 MB.
 | `/manus-storage/aw22-13-sama-skirt-and-cross-back-toop-5-448pdpa-7-jpg_7cc9bdd0.jpg` | `/media/aw22-13-sama-skirt-and-cross-back-toop-5-448pdpa-7-jpg_7cc9bdd0.jpg` | 177427 |
 | `/manus-storage/aw22-14-sama-turtleneck-poncho-5-914-cata-jpg_cf3f5004.jpg` | `/media/aw22-14-sama-turtleneck-poncho-5-914-cata-jpg_cf3f5004.jpg` | 669864 |
 | `/manus-storage/aw22-dress-5-772_3f07089e.jpg` | `/media/aw22-dress-5-772_3f07089e.jpg` | 237663 |
-| `/manus-storage/aw22-dress-5-774_143cd009.jpg` | `/media/aw22-dress-5-774_143cd009.jpg` | 228461 |
-| `/manus-storage/aw22-fisherman-sweater-1p9a6059_32d7a999.jpg` | `/media/aw22-fisherman-sweater-1p9a6059_32d7a999.jpg` | 1687274 |
 | `/manus-storage/aw22-folio-01-sama-alpaca-knit-dress-5-771-jpg_96981eee.jpg` | `/media/aw22-folio-01-sama-alpaca-knit-dress-5-771-jpg_96981eee.jpg` | 239113 |
 | `/manus-storage/aw22-folio-02-sama-blanket-5-334-jpg_1af3319d.jpg` | `/media/aw22-folio-02-sama-blanket-5-334-jpg_1af3319d.jpg` | 368936 |
 | `/manus-storage/aw22-folio-03-sama-button-cardigan-5-253-jpg_c9d21052.jpg` | `/media/aw22-folio-03-sama-button-cardigan-5-253-jpg_c9d21052.jpg` | 583385 |
@@ -82,9 +80,6 @@ Total local media size: 103.0 MB.
 | `/manus-storage/aw22-folio-12-sama-poncho-vest-5-250-jpg_77e2a657.jpg` | `/media/aw22-folio-12-sama-poncho-vest-5-250-jpg_77e2a657.jpg` | 373940 |
 | `/manus-storage/aw22-folio-13-sama-skirt-and-cross-back-toop-5-448pdpa-14-jpg_48b1da89.jpg` | `/media/aw22-folio-13-sama-skirt-and-cross-back-toop-5-448pdpa-14-jpg_48b1da89.jpg` | 165572 |
 | `/manus-storage/aw22-folio-14-sama-turtleneck-poncho-5-473pdpa-10-jpg_817704d9.jpg` | `/media/aw22-folio-14-sama-turtleneck-poncho-5-473pdpa-10-jpg_817704d9.jpg` | 218226 |
-| `/manus-storage/aw22-poncho-5-913-cata-3_a0f72b61.jpg` | `/media/aw22-poncho-5-913-cata-3_a0f72b61.jpg` | 613867 |
-| `/manus-storage/aw22-poncho-5-913-cata-4_4fcda5bd.jpg` | `/media/aw22-poncho-5-913-cata-4_4fcda5bd.jpg` | 691117 |
-| `/manus-storage/aw22-turtleneck-poncho-5-473-1_41215052.jpg` | `/media/aw22-turtleneck-poncho-5-473-1_41215052.jpg` | 819492 |
 | `/manus-storage/aw23-b1_8e07d7cd.jpg` | `/media/aw23-b1_8e07d7cd.jpg` | 574739 |
 | `/manus-storage/aw23-b2_6cd02b95.jpg` | `/media/aw23-b2_6cd02b95.jpg` | 478557 |
 | `/manus-storage/aw23-b3_3790d13a.jpg` | `/media/aw23-b3_3790d13a.jpg` | 611358 |
@@ -111,7 +106,6 @@ Total local media size: 103.0 MB.
 | `/manus-storage/aw23-g2_955a08db.jpg` | `/media/aw23-g2_955a08db.jpg` | 658269 |
 | `/manus-storage/aw23-g3_236783ab.jpg` | `/media/aw23-g3_236783ab.jpg` | 687313 |
 | `/manus-storage/aw23-g4_261d6165.jpg` | `/media/aw23-g4_261d6165.jpg` | 678419 |
-| `/manus-storage/aw23-g5_3e23af42.jpg` | `/media/aw23-g5_3e23af42.jpg` | 734257 |
 | `/manus-storage/aw23-g6_56f8c900.jpg` | `/media/aw23-g6_56f8c900.jpg` | 654336 |
 | `/manus-storage/aw23-g7_ee26bc0e.jpg` | `/media/aw23-g7_ee26bc0e.jpg` | 567031 |
 | `/manus-storage/aw23-h1_7f732852.jpg` | `/media/aw23-h1_7f732852.jpg` | 666732 |
@@ -161,12 +155,24 @@ Total local media size: 103.0 MB.
 | `/manus-storage/sama-portfolio-32_037af758.jpg` | `/media/sama-portfolio-32_037af758.jpg` | 1079209 |
 | `/manus-storage/sama-portfolio-33_693de08f.jpg` | `/media/sama-portfolio-33_693de08f.jpg` | 718437 |
 | `/manus-storage/sama-portfolio-34_9720d0e4.jpg` | `/media/sama-portfolio-34_9720d0e4.jpg` | 610887 |
-| `/manus-storage/sama-portfolio-35_3c251838.jpg` | `/media/sama-portfolio-35_3c251838.jpg` | 872033 |
+| `/manus-storage/sama-portfolio-35-replacement_6b977219.webp` | `/media/sama-portfolio-35-replacement_6b977219.webp` | 350434 |
 | `/manus-storage/sama-portfolio-36_9d523b8c.jpg` | `/media/sama-portfolio-36_9d523b8c.jpg` | 614086 |
 | `/manus-storage/sama-portfolio-37_c3c050f9.jpg` | `/media/sama-portfolio-37_c3c050f9.jpg` | 843858 |
 | `/manus-storage/sama-portfolio-38_9a12ca59.jpg` | `/media/sama-portfolio-38_9a12ca59.jpg` | 867195 |
 | `/manus-storage/sama-portfolio-39_5b80aa45.jpg` | `/media/sama-portfolio-39_5b80aa45.jpg` | 766599 |
 | `/manus-storage/sama-portfolio-40_1156cdff.jpg` | `/media/sama-portfolio-40_1156cdff.jpg` | 830157 |
-| `/manus-storage/sama-portfolio-41_cee18b10.jpg` | `/media/sama-portfolio-41_cee18b10.jpg` | 920687 |
+| `/manus-storage/sama-portfolio-41-replacement_7f0d954a.webp` | `/media/sama-portfolio-41-replacement_7f0d954a.webp` | 124028 |
 | `/manus-storage/sama-portfolio-42_977803cb.jpg` | `/media/sama-portfolio-42_977803cb.jpg` | 888456 |
+| `/manus-storage/sama-portfolio-43_e55a042f.webp` | `/media/sama-portfolio-43_e55a042f.webp` | 191072 |
+| `/manus-storage/sama-portfolio-44_99dcdb47.webp` | `/media/sama-portfolio-44_99dcdb47.webp` | 137880 |
+| `/manus-storage/sama-portfolio-45_ba52c13b.webp` | `/media/sama-portfolio-45_ba52c13b.webp` | 119242 |
+| `/manus-storage/sama-portfolio-46_6d6483f6.webp` | `/media/sama-portfolio-46_6d6483f6.webp` | 277954 |
+| `/manus-storage/sama-portfolio-47_9e42b5cb.webp` | `/media/sama-portfolio-47_9e42b5cb.webp` | 131128 |
+| `/manus-storage/sama-portfolio-48_78eb7f1f.webp` | `/media/sama-portfolio-48_78eb7f1f.webp` | 120536 |
+| `/manus-storage/sama-portfolio-49_ab9e190a.webp` | `/media/sama-portfolio-49_ab9e190a.webp` | 93562 |
+| `/manus-storage/sama-portfolio-50_2127f54b.webp` | `/media/sama-portfolio-50_2127f54b.webp` | 249536 |
+| `/manus-storage/sama-portfolio-51_37feec8f.webp` | `/media/sama-portfolio-51_37feec8f.webp` | 95446 |
+| `/manus-storage/sama-portfolio-52_06d7f991.webp` | `/media/sama-portfolio-52_06d7f991.webp` | 151858 |
+| `/manus-storage/sama-portfolio-53_d5d1b491.webp` | `/media/sama-portfolio-53_d5d1b491.webp` | 93758 |
+| `/manus-storage/sama-portfolio-54-replacement_6b4365d6.webp` | `/media/sama-portfolio-54-replacement_6b4365d6.webp` | 149356 |
 | `/manus-storage/studio-hero-reading-original_6a27e1b2.webp` | `/media/studio-hero-reading-original_6a27e1b2.webp` | 116756 |

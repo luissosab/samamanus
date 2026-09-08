@@ -1,0 +1,5 @@
+# Compact Packed Portfolio Mosaic — Validation Notes
+
+The active Portfolio is a four-column desktop field and two-column phone field. It uses a fixed **18px gutter** at every internal division. All 54 images occupy an explicit sixty-cell packing: forty-nine standard one-cell tiles, Portfolio 02 as a two-cell portrait-wide feature, Portfolio 14 as a three-cell tall portrait, Portfolio 17 and Portfolio 54 as two-cell landscape features, and Portfolio 35 as a two-cell medium portrait. The arithmetic is exactly `49 + 2 + 3 + 2 + 2 + 2 = 60`, which fills fifteen rows of four desktop cells and thirty rows of two phone cells.
+
+The build-time coverage check confirmed all indices 01–54 appear exactly once and that the prior 24/17 and 35/38 visual swaps are retained. The gallery figure uses `object-position: center center` for every preview, and the viewer continues to use the original native source with `object-fit: contain` and a 90dvh cap. Desktop and phone full-page reviews confirm a compact uninterrupted field with no blank cells, no overlapping tiles, no placeholder tiles, and clearly horizontal presentation for the Portfolio 17 and Portfolio 54 features.
