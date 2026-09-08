@@ -115,45 +115,23 @@ export const portfolioPairs: PortfolioPair[] = [
 ];
 
 export type PortfolioTriple = { orientation: "portrait" | "landscape"; pieces: [PortfolioPiece, PortfolioPiece, PortfolioPiece] };
-const expandedPiece = (title: string, src: string): PortfolioPiece => ({ title, src, alt: `${title} knitwear photograph` });
 const portfolioTriple = (orientation: PortfolioTriple["orientation"], pieces: [PortfolioPiece, PortfolioPiece, PortfolioPiece]): PortfolioTriple => ({ orientation, pieces });
+const officialPortfolioPiece = (number: string, src: string): PortfolioPiece => ({ title: `Portfolio ${number}`, src, alt: `Official Sama Knitwear portfolio photograph ${number}` });
 
-// The public library intentionally draws from 105 distinct OneDrive originals.  Each desktop row
-// is explicitly built from one source orientation to protect the visual rhythm of the three-column grid.
+// Official 42-image Portfolio sequence supplied by Sama. Each numbered triplet is preserved as provided.
 export const portfolioTriples: PortfolioTriple[] = [
-  portfolioTriple("portrait", [expandedPiece("Knitwear look", aw23.d2), expandedPiece("Knitwear look", aw23.d3a), expandedPiece("Knitwear look", aw23.d3)]),
-  portfolioTriple("landscape", [expandedPiece("Knitwear look", aw23.b1), expandedPiece("Knitwear look", aw23.b2), expandedPiece("Knitwear look", aw23.b3)]),
-  portfolioTriple("portrait", [expandedPiece("Knitwear look", aw23.d5), expandedPiece("Knitwear look", aw23.e1), expandedPiece("Knitwear look", aw23.e6)]),
-  portfolioTriple("landscape", [expandedPiece("Knitwear look", aw23.e2), expandedPiece("Knitwear look", aw23.e3), expandedPiece("Knitwear look", aw23.e4a)]),
-  portfolioTriple("portrait", [expandedPiece("Knitwear look", aw23.e7a), expandedPiece("Knitwear look", aw23.f1), expandedPiece("Knitwear look", aw23.f2)]),
-  portfolioTriple("landscape", [expandedPiece("Knitwear look", aw23.e4), expandedPiece("Knitwear look", aw23.e5), expandedPiece("Knitwear look", aw23.e7)]),
-  portfolioTriple("portrait", [expandedPiece("Knitwear look", aw23.f4), expandedPiece("Knitwear look", aw23.g1), expandedPiece("Knitwear look", aw23.g2)]),
-  portfolioTriple("landscape", [expandedPiece("Knitwear look", aw23.f3), expandedPiece("Knitwear look", aw23.f5), expandedPiece("Knitwear look", aw23.h1)]),
-  portfolioTriple("portrait", [expandedPiece("Knitwear look", aw23.g3), expandedPiece("Knitwear look", aw23.g4), expandedPiece("Knitwear look", aw23.g6)]),
-  portfolioTriple("landscape", [expandedPiece("Knitwear look", aw23.h2), expandedPiece("Knitwear look", aw23.h3), expandedPiece("Knitwear look", aw23.h5)]),
-  portfolioTriple("portrait", [expandedPiece("Knitwear look", aw23.g7), expandedPiece("Knitwear look", aw23.j1), expandedPiece("Knitwear look", aw23.j2)]),
-  portfolioTriple("landscape", [expandedPiece("Fisherman Cardigan", aw21Portfolio.fishermanCardigan), expandedPiece("Fisherman Sweater", aw21Portfolio.fishermanSweater), expandedPiece("Meanders Sweater", aw21Portfolio.meandersSweater)]),
-  portfolioTriple("portrait", [expandedPiece("3 Color Turtleneck", aw21Portfolio.colorTurtleneck), expandedPiece("Circle Ruana", aw21Portfolio.circleRuana), expandedPiece("Crazy Sweater", aw21Portfolio.crazySweater)]),
-  portfolioTriple("landscape", [expandedPiece("Men’s Baby Alpaca Crew", aw21Portfolio.babyAlpaca), expandedPiece("Pima Cashmere Crew", aw21Portfolio.pimaCashmere), expandedPiece("Pima Cotton Crew", aw21Portfolio.pimaCrewneck)]),
-  portfolioTriple("portrait", [expandedPiece("Drop Needle Vest", aw21Portfolio.dropNeedleVest), expandedPiece("Jersey Pants & Boxy Crop Top", aw21Portfolio.jerseySet), expandedPiece("Lace Tank", aw21Portfolio.laceTank)]),
-  portfolioTriple("landscape", [expandedPiece("Pleated Vest", aw21Portfolio.pleatedVest), expandedPiece("Roll Neck Sweater", aw21Portfolio.rollNeck), expandedPiece("Snood", aw21Portfolio.snood)]),
-  portfolioTriple("portrait", [expandedPiece("Eco Baby Cotton Crew", aw21Portfolio.ecoBabyCotton), expandedPiece("Inca Spun Sweater", aw21Portfolio.incaSpun), expandedPiece("Raqu Crewneck", aw21Portfolio.raquCrewneck)]),
-  portfolioTriple("landscape", [expandedPiece("Knit Tank", aw22Portfolio.tank), expandedPiece("Long Lace Rib Cardigan", aw22Portfolio.laceCardigan), expandedPiece("New Fisherman Sweater", aw22Portfolio.fishermanSweater)]),
-  portfolioTriple("portrait", [expandedPiece("Three Fiber Crew", aw21Portfolio.threeFiber), expandedPiece("Pleated Pants & Short-Sleeve Top", aw21Portfolio.pleatedSet), expandedPiece("Rib Knit Tie Dress", aw21Portfolio.ribDress)]),
-  portfolioTriple("landscape", [expandedPiece("Poncho Vest", aw22Portfolio.ponchoVest), expandedPiece("3 Color Turtleneck", aw21Folio.colorTurtleneck), expandedPiece("Circle Ruana", aw21Folio.circleRuana)]),
-  portfolioTriple("portrait", [expandedPiece("Alpaca Knit Dress", aw22Portfolio.alpacaDress), expandedPiece("Blanket", aw22Portfolio.blanket), expandedPiece("Button Cardigan", aw22Portfolio.buttonCardigan)]),
-  portfolioTriple("landscape", [expandedPiece("Crazy Sweater", aw21Folio.crazySweater), expandedPiece("Fisherman Cardigan", aw21Folio.fishermanCardigan), expandedPiece("Fisherman Sweater", aw21Folio.fishermanSweater)]),
-  portfolioTriple("portrait", [expandedPiece("Knit Pants & Scoop Tee", aw22Portfolio.pantsAndTee), expandedPiece("Knit Skirt", aw22Portfolio.skirt), expandedPiece("Little Alpaca Pullover", aw22Portfolio.littlePullover)]),
-  portfolioTriple("landscape", [expandedPiece("Meanders Sweater", aw21Folio.meandersSweater), expandedPiece("Men’s Baby Alpaca Crew", aw21Folio.babyAlpaca), expandedPiece("Inca Spun Sweater", aw21Folio.incaSpun)]),
-  portfolioTriple("portrait", [expandedPiece("Natural Melange Set", aw22Portfolio.naturalMelange), expandedPiece("New Fisherman Cardigan", aw22Portfolio.fishermanCardigan), expandedPiece("Skirt & Cross-Back Top", aw22Portfolio.skirtAndTop)]),
-  portfolioTriple("landscape", [expandedPiece("Pima Cashmere Crew", aw21Folio.pimaCashmere), expandedPiece("Pima Cotton Crew", aw21Folio.pimaCrewneck), expandedPiece("Three Fiber Crew", aw21Folio.threeFiber)]),
-  portfolioTriple("portrait", [expandedPiece("Turtleneck Poncho", aw22Portfolio.turtleneckPoncho), expandedPiece("Drop Needle Vest", aw21Folio.dropNeedleVest), expandedPiece("Jersey Pants & Boxy Crop Top", aw21Folio.jerseySet)]),
-  portfolioTriple("landscape", [expandedPiece("Pleated Pants & Short-Sleeve Top", aw21Folio.pleatedSet), expandedPiece("Pleated Vest", aw21Folio.pleatedVest), expandedPiece("Roll Neck Sweater", aw21Folio.rollNeck)]),
-  portfolioTriple("portrait", [expandedPiece("Alpaca Knit Dress", "/media/aw22-dress-5-774_143cd009.jpg"), expandedPiece("Eco Baby Cotton Crew", aw21Folio.ecoBabyCotton), expandedPiece("Raqu Crewneck", aw21Folio.raquCrewneck)]),
-  portfolioTriple("landscape", [expandedPiece("Snood", aw21Folio.snood), expandedPiece("Button Cardigan", aw22Folio.buttonCardigan), expandedPiece("Knit Tank", aw22Folio.tank)]),
-  portfolioTriple("portrait", [expandedPiece("Rib Knit Tie Dress", aw21Folio.ribDress), expandedPiece("Alpaca Knit Dress", aw22Folio.alpacaDress), expandedPiece("Blanket", aw22Folio.blanket)]),
-  portfolioTriple("landscape", [expandedPiece("Poncho Vest", aw22Folio.ponchoVest), expandedPiece("Turtleneck Poncho", "/media/aw22-poncho-5-913-cata-3_a0f72b61.jpg"), expandedPiece("Turtleneck Poncho", "/media/aw22-poncho-5-913-cata-4_4fcda5bd.jpg")]),
-  portfolioTriple("portrait", [expandedPiece("Knit Pants & Scoop Tee", aw22Folio.pantsAndTee), expandedPiece("Knit Skirt", aw22Folio.skirt), expandedPiece("Little Alpaca Pullover", aw22Folio.littlePullover)]),
-  portfolioTriple("portrait", [expandedPiece("Long Lace Rib Cardigan", aw22Folio.laceCardigan), expandedPiece("Natural Melange Set", aw22Folio.naturalMelange), expandedPiece("New Fisherman Cardigan", aw22Folio.fishermanCardigan)]),
-  portfolioTriple("portrait", [expandedPiece("New Fisherman Sweater", aw22Folio.fishermanSweater), expandedPiece("Skirt & Cross-Back Top", aw22Folio.skirtAndTop), expandedPiece("Turtleneck Poncho", aw22Folio.turtleneckPoncho)]),
+  portfolioTriple("portrait", [officialPortfolioPiece("01", "/media/sama-portfolio-01-color-corrected_a6dd9565.webp"), officialPortfolioPiece("02", "/media/sama-portfolio-02_2dbbd388.jpg"), officialPortfolioPiece("03", "/media/sama-portfolio-03_9c4d9077.jpg")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("04", "/media/sama-portfolio-04_64f52409.jpg"), officialPortfolioPiece("05", "/media/sama-portfolio-05_8c83445c.jpg"), officialPortfolioPiece("06", "/media/sama-portfolio-06_235a25b7.jpg")]),
+  portfolioTriple("landscape", [officialPortfolioPiece("07", "/media/sama-portfolio-07-color-corrected_a2dbaa40.webp"), officialPortfolioPiece("08", "/media/sama-portfolio-08-color-corrected_d11e68e2.webp"), officialPortfolioPiece("09", "/media/sama-portfolio-09-color-corrected_bd291e78.webp")]),
+  portfolioTriple("landscape", [officialPortfolioPiece("10", "/media/sama-portfolio-10-color-corrected_3fde04b0.webp"), officialPortfolioPiece("11", "/media/sama-portfolio-11-color-corrected_4d4168ea.webp"), officialPortfolioPiece("12", "/media/sama-portfolio-12-color-corrected_fa4bdfcf.webp")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("13", "/media/sama-portfolio-13-color-corrected_fa26cf06.webp"), officialPortfolioPiece("14", "/media/sama-portfolio-14-color-corrected_d405c83d.webp"), officialPortfolioPiece("15", "/media/sama-portfolio-15-color-corrected_f00b6519.webp")]),
+  portfolioTriple("landscape", [officialPortfolioPiece("16", "/media/sama-portfolio-16_5701bac0.jpg"), officialPortfolioPiece("17", "/media/sama-portfolio-17_342c5647.jpg"), officialPortfolioPiece("18", "/media/sama-portfolio-18-color-corrected_d01572e5.webp")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("19", "/media/sama-portfolio-19-color-corrected_168ffddd.webp"), officialPortfolioPiece("20", "/media/sama-portfolio-20-color-corrected_dadaa417.webp"), officialPortfolioPiece("21", "/media/sama-portfolio-21_54919b62.jpg")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("22", "/media/sama-portfolio-22_1424c936.jpg"), officialPortfolioPiece("23", "/media/sama-portfolio-23_47fde963.jpg"), officialPortfolioPiece("24", "/media/sama-portfolio-24_159cf047.jpg")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("25", "/media/sama-portfolio-25_894a9ba8.jpg"), officialPortfolioPiece("26", "/media/sama-portfolio-26_f80a2a48.jpg"), officialPortfolioPiece("27", "/media/sama-portfolio-27_bc03d5a7.jpg")]),
+  portfolioTriple("landscape", [officialPortfolioPiece("28", "/media/sama-portfolio-28_1392bc96.jpg"), officialPortfolioPiece("29", "/media/sama-portfolio-29_3a3d2415.jpg"), officialPortfolioPiece("30", "/media/sama-portfolio-30_1d5fab05.jpg")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("31", "/media/sama-portfolio-31_3c7b8105.jpg"), officialPortfolioPiece("32", "/media/sama-portfolio-32_037af758.jpg"), officialPortfolioPiece("33", "/media/sama-portfolio-33_693de08f.jpg")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("34", "/media/sama-portfolio-34_9720d0e4.jpg"), officialPortfolioPiece("35", "/media/sama-portfolio-35_3c251838.jpg"), officialPortfolioPiece("36", "/media/sama-portfolio-36_9d523b8c.jpg")]),
+  portfolioTriple("landscape", [officialPortfolioPiece("37", "/media/sama-portfolio-37_c3c050f9.jpg"), officialPortfolioPiece("38", "/media/sama-portfolio-38_9a12ca59.jpg"), officialPortfolioPiece("39", "/media/sama-portfolio-39_5b80aa45.jpg")]),
+  portfolioTriple("portrait", [officialPortfolioPiece("40", "/media/sama-portfolio-40_1156cdff.jpg"), officialPortfolioPiece("41", "/media/sama-portfolio-41_cee18b10.jpg"), officialPortfolioPiece("42", "/media/sama-portfolio-42_977803cb.jpg")]),
 ];

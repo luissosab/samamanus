@@ -145,8 +145,8 @@ a { color: inherit; }
 .sama-page-hero--cobalt { background: #28241f; color: #fff; }
 .sama-page-hero--cobalt p:not(.sama-label) { color: rgba(255,255,255,0.82); }
 .sama-studio-hero { background: var(--paper-soft); color: var(--ink); display: grid; grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr); min-height: 0; }
-.sama-studio-hero__portrait { align-self: stretch; background: #31494b; margin: 0; }
-.sama-studio-hero__portrait img { height: 100%; max-height: 820px; object-fit: contain; object-position: center; width: 100%; }
+.sama-studio-hero__portrait { align-self: stretch; margin: 0; overflow: hidden; }
+.sama-studio-hero__portrait img { height: 100%; max-height: none; object-fit: cover; object-position: center; width: 100%; }
 .sama-studio-hero__copy { align-self: center; padding: clamp(3.5rem, 7vw, 6.5rem); }
 .sama-studio-hero--text { display: block; }
 .sama-studio-hero__copy .sama-label { color: var(--cobalt); }

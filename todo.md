@@ -189,9 +189,59 @@
 - [x] Align desktop navigation to the right and replace the arrow CTA with a cleaner orange wholesale action.
 - [x] Validate unique Portfolio imagery, desktop navigation alignment, CTA design, and mobile behavior before saving.
 
-## GitHub Handoff and Portable Media
+## Collections Image Replacement
 
-- [ ] Inspect the GitHub connection, repository target, current remotes, and hosted-media references.
-- [ ] Prepare the media handoff without violating the managed deployment asset policy, and update eligible source references.
-- [ ] Validate the portable codebase and record the exact changes ready to push.
-- [ ] Confirm the destination repository and push the verified project.
+- [x] Locate the three existing Collections image slots and prepare the numbered supplied assets for managed hosting.
+- [x] Replace the slots in strict Collections1, Collections2, Collections3 order.
+- [x] Validate the sequence and responsive image presentation before saving.
+
+Validation: Collections1 appears in the hero, Collections2 in the Portfolio entry, and Collections3 in the Wholesale & Private Label callout. Desktop and mobile checks confirmed the requested order and visible rendering.
+
+## Studio Hero Image Replacement
+
+- [x] Create a square left-cropped version of the supplied Studio image that preserves the model reading.
+- [x] Upload the prepared image as a managed asset and replace the Studio hero reference.
+- [x] Verify the updated Studio hero at desktop and mobile widths before saving.
+
+Validation: The refreshed Studio hero uses the supplied reading image in a square crop. Desktop and mobile checks confirmed the model, knit, book, wood wall, and bookshelf remain clear and the image fills the intended top-right frame.
+
+## Studio Full-Bleed Image Correction
+
+- [x] Upload the original supplied Studio photograph as a managed image asset without using the square crop.
+- [x] Update the Studio hero to fill the complete image frame with the original photograph and remove visible green side bars.
+- [x] Verify complete image coverage at desktop and mobile widths before saving.
+
+Validation: The Studio hero now uses the original supplied reading photograph with `object-fit: cover`; desktop and mobile checks confirm that the image covers the complete frame with no visible green side bars.
+
+## Collaborate Image Replacement
+
+- [x] Prepare the supplied Collaborate1 photograph as a managed production asset.
+- [x] Replace the current Collaborate page image reference.
+- [x] Verify the replacement at desktop and mobile widths before saving.
+
+Validation: The supplied Collaborate1 portrait now replaces the Collaborate hero image and displays clearly in the desktop split layout and mobile stacked layout.
+
+## Official Portfolio Image Replacement
+
+- [x] Inspect the numbered ZIP contents and confirm the supplied three-image group sequence.
+- [x] Prepare and upload the official Portfolio image set as managed production assets.
+- [x] Replace the current Portfolio data with the supplied numbered groups.
+- [x] Remove superseded local Portfolio assets and validate the new desktop and mobile gallery.
+
+Validation: Portfolio 01–42 are presented in fourteen sequential triplets. Desktop preserves every supplied portrait or landscape group; mobile renders the complete official sequence in a single column. The two local superseded Portfolio image files were removed after a source-reference audit.
+
+## Color-Corrected Portfolio Replacements
+
+- [x] Map the thirteen supplied color-corrected files to their existing numbered Portfolio positions.
+- [x] Prepare and upload the corrected files as managed assets without changing their gallery order.
+- [x] Replace the existing Portfolio references in place and remove their superseded local source files.
+- [x] Validate the corrected image positions and responsive gallery before saving.
+
+Validation: Color-corrected versions of Portfolio 01, 07–15, and 18–20 replace their prior images in the same numbered positions. All thirteen old local original and web-ready copies were removed, and the full Portfolio was confirmed at desktop and mobile widths.
+
+## GitHub Export Refresh
+
+- [ ] Inspect the existing samamanus export, current project code, and managed-media references.
+- [ ] Refresh the repository’s portable local-media export with the latest website state.
+- [ ] Validate the refreshed repository build and review its pending changes.
+- [ ] Confirm and push the latest export to the existing GitHub repository.
