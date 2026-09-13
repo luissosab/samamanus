@@ -5,7 +5,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { PortfolioFooter, PortfolioHeader } from "@/components/PortfolioChrome";
 
-const founderPortrait = "/media/eunice-moran-founder_d113baa6.jpg";
+const founderPortrait = "/media/Eunice.jpg";
 const studioImage = "/media/studio-hero-reading-original_6a27e1b2.webp";
 
 export default function PortfolioHouse() {
