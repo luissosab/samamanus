@@ -183,8 +183,6 @@ a { color: inherit; }
 .sama-information-hero { background: var(--paper-soft); padding: clamp(4rem, 8vw, 8rem) 10vw clamp(3.5rem, 7vw, 7rem); }
 .sama-information-hero h1 { font-size: clamp(3.3rem, 5.4vw, 6rem); margin: 0.8rem 0 1.3rem; }
 .sama-information-hero > p:not(.sama-label) { color: var(--ink-soft); font-size: 1rem; line-height: 1.7; max-width: 26rem; }
-.sama-terms-hero { padding-bottom: clamp(3rem, 5vw, 4.5rem); }
-.sama-terms-hero h1 { font-size: clamp(3rem, 5.2vw, 5.8rem); margin-top: 0; }
 .sama-information-index { align-items: center; border-bottom: 1px solid var(--line); border-top: 3px solid var(--red); display: flex; gap: 1.8rem; padding: 1.05rem 10vw; }
 .sama-information-index .sama-label { margin-right: auto; }
 .sama-information-index a { align-items: center; color: var(--ink-soft); display: inline-flex; font-family: "Manrope", Arial, sans-serif; font-size: 0.68rem; font-weight: 700; gap: 0.55rem; letter-spacing: 0.07em; text-transform: uppercase; }
@@ -200,13 +198,6 @@ a { color: inherit; }
 .sama-information-contact .sama-label { color: #a5d8e0; }
 .sama-information-contact h2 { font-size: clamp(2.8rem, 4.8vw, 5.4rem); margin: 0.8rem 0 1.5rem; }
 .sama-information-contact a { border-color: #fff; }
-.sama-terms-document { margin: 0 auto; max-width: 1260px; padding: clamp(3.5rem, 8vw, 8rem) 7vw; }
-.sama-terms-document > section { border-top: 1px solid var(--line); display: grid; gap: clamp(2rem, 7vw, 7rem); grid-template-columns: minmax(160px, 0.55fr) minmax(0, 1.45fr); padding: 2.3rem 0; }
-.sama-terms-document > section:first-child { border-top: 3px solid var(--red); }
-.sama-terms-document section > div:first-child { align-items: start; display: grid; gap: 0.8rem; grid-template-columns: 2rem 1fr; }
-.sama-terms-document section > div:first-child span { color: var(--cobalt); font-size: 1.5rem; font-weight: 700; }
-.sama-terms-document h2 { font-family: "Manrope", Arial, sans-serif; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.02em; line-height: 1.4; }
-.sama-terms-document p { color: var(--ink-soft); font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; max-width: 47rem; }
 .sama-not-found { background: var(--paper-soft); min-height: calc(100svh - 126px); padding: clamp(5rem, 13vw, 14rem) 10vw; }
 .sama-not-found h1 { font-size: clamp(4rem, 8vw, 10rem); margin: 1rem 0 1.8rem; }
 .sama-not-found p:not(.sama-label) { color: var(--ink-soft); font-size: 1.05rem; line-height: 1.75; max-width: 32rem; }
@@ -326,9 +317,6 @@ a { color: inherit; }
   .sama-information-index { align-items: start; flex-wrap: wrap; gap: 1rem 1.4rem; padding: 1rem 7vw; }
   .sama-information-index .sama-label { flex-basis: 100%; }
   .sama-policy-grid h2, .sama-information-contact h2 { font-size: clamp(2.5rem, 10vw, 4rem); }
-  .sama-terms-document { padding: 3.5rem 7vw 5rem; }
-  .sama-terms-document > section { display: block; padding: 2rem 0; }
-  .sama-terms-document section > div:first-child { margin-bottom: 1.2rem; }
   .sama-footer { padding: 4rem 7vw 1.4rem; }
   .sama-footer__top { align-items: flex-start; display: block; }
   .sama-footer__top img { height: 105px; width: 198px; }
