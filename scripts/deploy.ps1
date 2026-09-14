@@ -64,7 +64,7 @@ finally {
 
 Write-Host "Promoting release to live website..."
 
-$promoteCommand = "rsync -a --delay-updates --delete-delay --exclude='.well-known/' --exclude='cgi-bin/' '$ReleasePath/' '$RemotePath/' && rm -rf '$ReleasePath'"
+$promoteCommand = "rsync -a --delay-updates --delete-delay --exclude='.well-known/' --exclude='cgi-bin/' '$ReleasePath/' '$RemotePath/' && chmod u+w '$ReleasePath' && rm -rf '$ReleasePath'"
 
 ssh -p $RemotePort "$RemoteUser@$RemoteHost" $promoteCommand
 
